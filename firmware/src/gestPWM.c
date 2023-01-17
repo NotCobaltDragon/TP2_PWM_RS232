@@ -75,8 +75,18 @@ void GPWM_GetSettings(S_pwmSettings *pData)
     pData->AngleSetting = pData->absAngle - SERVO_OFFSET;     //Signed value from -90 to 90   
 }
 
-void GPWM_DispSettings(S_pwmSettings *pData) //Display settings on LCD
+void GPWM_DispSettings(S_pwmSettings *pData, int Remote) //Display settings on LCD
 {
+    lcd_gotoxy(1, 1);
+    if (Remote == REMOTE)
+    {
+        printf_lcd("Remote Settings");
+    }
+    else
+    {
+        printf_lcd("Local Settings");
+    }
+    
     lcd_gotoxy(1, 2);
     if(pData -> SpeedSetting >= 0)  //Check if value is positive/negative
     {

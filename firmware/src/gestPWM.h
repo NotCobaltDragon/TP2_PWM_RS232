@@ -39,6 +39,8 @@
 
 #define AVERAGE_SIZE 10
 
+
+
 /*--------------------------------------------------------*/
 // Function Prototype
 /*--------------------------------------------------------*/
@@ -56,7 +58,7 @@ void GPWM_Initialize(S_pwmSettings *pData);
 
 // Functions use a pointer from the structure S_pwmSettings
 void GPWM_GetSettings(S_pwmSettings *pData);    //Get Speed and Angle
-void GPWM_DispSettings(S_pwmSettings *pData);   //Update Display
+void GPWM_DispSettings(S_pwmSettings *pData, int Remote);   //Update Display
 void GPWM_ExecPWM(S_pwmSettings *pData);        // PWM execution and Motor management
 void GPWM_ExecPWMSoft(S_pwmSettings *pData);    // Software PWM execution
 

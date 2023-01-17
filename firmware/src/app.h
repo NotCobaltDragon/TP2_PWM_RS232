@@ -64,6 +64,12 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 #include "Mc32DriverAdc.h"
 #include "Mc32DriverLcd.h"
 
+#include "Mc32gest_RS232.h"
+#include "Mc32CalCrc16.h"
+#include "GesFifoTh32.h"
+
+#define LOCAL 0
+#define REMOTE 1
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility

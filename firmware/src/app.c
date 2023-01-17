@@ -127,6 +127,8 @@ void APP_Tasks ( void )
             BSP_InitADC10();  //Init of ADC
             
             GPWM_Initialize(&PWMData);  //Init H Bridge & OCs
+
+            InitFifoComm(); //Init Fifio Communication
             
             appData.state = APP_STATE_WAIT;
             
@@ -135,9 +137,30 @@ void APP_Tasks ( void )
 
         case APP_STATE_SERVICE_TASKS:
         {
-            GPWM_GetSettings(&PWMData);
-            GPWM_DispSettings(&PWMData);
-            GPWM_ExecPWM(&PWMData);
+            CommStatus = GetMessage(&PWMData);  //Reception settings from remote
+
+            if(CommStatus == REMOTE)
+            {
+              GPWM_GetSettings(&PWMData); //Local
+            }
+            else
+            {
+              GPWM_GetSettings(&PWMDataToSend); //Remote
+            }
+
+            GPWM_DispSettings(&PWMData, CommStatus);  //Display
+
+            GPWM_ExecPWM(&PWMData); //Execute task on motors
+
+            if (CommStatus == REMOTE)  //Send Values
+            {
+              SendMessage(&PWMData);  //Local
+            }
+            else
+            {
+              SendMessage(&PWMDataToSend);  //Remote
+            }
+
             appData.state = APP_STATE_WAIT; //Enables evolution in the future
             break;
         }
