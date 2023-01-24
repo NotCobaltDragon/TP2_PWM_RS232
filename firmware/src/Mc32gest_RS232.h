@@ -16,6 +16,7 @@
 #include <stdint.h>
 #include "GesFifoTh32.h"
 #include "gestPWM.h"
+#include "app.h"
 
 /*--------------------------------------------------------*/
 // Définition des fonctions prototypes

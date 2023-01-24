@@ -77,6 +77,7 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 */
 
 APP_DATA appData;
+int CommStatus = 0;
 // *****************************************************************************
 // *****************************************************************************
 // Section: Application initialisation and State Machine Functions
@@ -145,7 +146,7 @@ void APP_Tasks ( void )
             }
             else
             {
-              GPWM_GetSettings(&PWMDataToSend); //Remote
+              GPWM_GetSettings(&PWMData); //Remote
             }
 
             GPWM_DispSettings(&PWMData, CommStatus);  //Display
@@ -158,7 +159,7 @@ void APP_Tasks ( void )
             }
             else
             {
-              SendMessage(&PWMDataToSend);  //Remote
+              SendMessage(&PWMData);  //Remote
             }
 
             appData.state = APP_STATE_WAIT; //Enables evolution in the future
