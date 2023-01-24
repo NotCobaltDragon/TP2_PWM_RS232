@@ -13,7 +13,7 @@
 
 #include "GestPWM.h"
 
-S_pwmSettings PWMData;  //For settings values
+S_pwmSettings PWMData, PWMDataToSend ;  //For settings values
 APP_DATA appData;
 
 void GPWM_Initialize(S_pwmSettings *pData)
@@ -31,7 +31,7 @@ void GPWM_Initialize(S_pwmSettings *pData)
    DRV_TMR0_Start();
    DRV_TMR1_Start();
    DRV_TMR2_Start();
-   DRV_TMR3_Start();
+   //DRV_TMR3_Start();
    
    //Init OC 2 and 3
    DRV_OC0_Start();
@@ -55,7 +55,7 @@ void GPWM_GetSettings(S_pwmSettings *pData)
     Table_Avg_CH0[0] = appData.adcRes.Chan0;
     Table_Avg_CH1[0] = appData.adcRes.Chan1;
     
-    Avg_ADC_CH0 = ValADC_MOY_CH(Table_Avg_CH0); //Call function to get a rolling average
+    Avg_ADC_CH0 = Avg_ADC_Value(Table_Avg_CH0); //Call function to get a rolling average
 
     Val_Conv = (Avg_ADC_CH0 * 2 * MOTOR_DC_BAND)/ADC_RES;  //Raw value from 0 to 198
     pData->SpeedSetting = Val_Conv - MOTOR_DC_BAND;    //Signed value from -99 to 99
@@ -70,7 +70,7 @@ void GPWM_GetSettings(S_pwmSettings *pData)
     }
 
     /******---Conversion of ADC, Channel 1---***********/
-    Avg_ADC_CH1 = ValADC_MOY_CH(Table_Avg_CH1); //Call function to get a rolling average  
+    Avg_ADC_CH1 = Avg_ADC_Value(Table_Avg_CH1); //Call function to get a rolling average  
     pData->absAngle = (Avg_ADC_CH1*SERVO_RANGE)/ADC_RES;    //Raw value from 0 to 180
     pData->AngleSetting = pData->absAngle - SERVO_OFFSET;     //Signed value from -90 to 90   
 }

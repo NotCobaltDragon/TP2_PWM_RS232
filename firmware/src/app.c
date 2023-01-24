@@ -54,7 +54,8 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 // *****************************************************************************
 
 #include "app.h"
-#include "GesFifoTh32.h"
+#include "gestPWM.h"
+#include "Mc32gest_RS232.h"
 
 // *****************************************************************************
 // *****************************************************************************
@@ -108,6 +109,7 @@ void APP_Initialize ( void )
 
 void APP_Tasks ( void )
 {
+    uint8_t CommStatus;
     switch ( appData.state )
     {
         /* Application's initial state. */
@@ -140,7 +142,7 @@ void APP_Tasks ( void )
         {
             CommStatus = GetMessage(&PWMData);  //Reception settings from remote
 
-            if(CommStatus == REMOTE)
+            if(CommStatus == LOCAL)
             {
               GPWM_GetSettings(&PWMData); //Local
             }
@@ -153,7 +155,7 @@ void APP_Tasks ( void )
 
             GPWM_ExecPWM(&PWMData); //Execute task on motors
 
-            if (CommStatus == REMOTE)  //Send Values
+            if (CommStatus == LOCAL)  //Send Values
             {
               SendMessage(&PWMData);  //Local
             }

@@ -52,7 +52,7 @@ typedef struct {
     int8_t AngleSetting; // Defined Angle  -90° à +90°
 } S_pwmSettings;
 
-extern S_pwmSettings PWMData; 
+extern S_pwmSettings PWMData, PWMDataToSend; 
 
 void GPWM_Initialize(S_pwmSettings *pData);
 

@@ -57,14 +57,11 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 #include <stddef.h>
 #include <stdlib.h>
 
-#include "gestPWM.h"
-
 #include "system_config.h"
 #include "system_definitions.h"
 #include "Mc32DriverAdc.h"
 #include "Mc32DriverLcd.h"
 
-#include "Mc32gest_RS232.h"
 #include "Mc32CalCrc16.h"
 #include "GesFifoTh32.h"
 

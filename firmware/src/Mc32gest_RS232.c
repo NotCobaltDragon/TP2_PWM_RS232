@@ -77,11 +77,14 @@ void InitFifoComm(void)
 int GetMessage(S_pwmSettings *pData)
 {
     int commStatus = 0;
+    int NbCharToRead;
     
     // Traitement de réception à introduire ICI
     // Lecture et décodage fifo réception
     // ...
-    
+    NbCharToRead = GetReadSize(&descrFifoRX);
+
+    if(NbCharToRead >= MESS_SIZE)
     
     // Gestion controle de flux de la réception
     if(GetWriteSpace ( &descrFifoRX) >= (2*MESS_SIZE)) {

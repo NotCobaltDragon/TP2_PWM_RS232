@@ -21,6 +21,8 @@
 // Définition des fonctions prototypes
 /*--------------------------------------------------------*/
 
+//#define MESS_SIZE
+
 // prototypes des fonctions
 void InitFifoComm(void);
 int GetMessage(S_pwmSettings *pData);
