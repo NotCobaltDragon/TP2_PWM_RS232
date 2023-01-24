@@ -98,8 +98,33 @@ void SendMessage(S_pwmSettings *pData)
     int8_t freeSize;
     
     // Traitement émission à introduire ICI
+    freeSize = GetWriteSpace (&descriFifoTX);
+    
+    
     // Formatage message et remplissage fifo émission
-    // ...
+    if (freeSize >= MESS_SIZE)
+    {
+        //compose de message
+        //Dépose le message dans le fifo
+        PutCharInFifo (&descrFifoTX, TxMess.Start);
+        //... idem pour les quatres 
+        //Dépose le message dans le fifo
+        PutCharInFifo (&descrFifoTX, TxMess.Speed);
+        //... idem pour les quatres 
+        //Dépose le message dans le fifo
+        PutCharInFifo (&descrFifoTX, TxMess.Angle);
+        //... idem pour les quatres 
+        //Dépose le message dans le fifo
+        PutCharInFifo (&descrFifoTX, TxMess.MsbCrc);
+        //... idem pour les quatres 
+        //Dépose le message dans le fifo
+        PutCharInFifo (&descrFifoTX, TxMess.LsbCrc);
+        //... idem pour les quatres 
+        
+        //rajouter update CRC pour les quatres
+        
+  
+    }
     
     
     // Gestion du controle de flux
