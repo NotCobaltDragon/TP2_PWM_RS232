@@ -108,6 +108,7 @@ endif
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ${OBJECTDIR}/_ext/1360937237/app.o: ../src/app.c  .generated_files/110efe05d6eefac379527d62d3c16f7c844ac9a.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/app.o.d 
@@ -187,132 +188,216 @@ ${OBJECTDIR}/_ext/1623445232/Mc32CoreTimer.o: ../../../../../../../bsp/pic32mx_s
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -MP -MMD -MF "${OBJECTDIR}/_ext/1623445232/Mc32CoreTimer.o.d" -o ${OBJECTDIR}/_ext/1623445232/Mc32CoreTimer.o ../../../../../../../bsp/pic32mx_skes/Mc32CoreTimer.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
 ${OBJECTDIR}/_ext/1361460060/drv_adc_static.o: ../src/system_config/default/framework/driver/adc/src/drv_adc_static.c  .generated_files/29981ea91e32b362bd644ce6297045a9fc2daadc.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/1361460060/drv_adc_static.o: ../src/system_config/default/framework/driver/adc/src/drv_adc_static.c  .generated_files/746617f80e3f2e4811fa23de4038a7b6a06f278b.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/1361460060" 
 	@${RM} ${OBJECTDIR}/_ext/1361460060/drv_adc_static.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1361460060/drv_adc_static.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -MP -MMD -MF "${OBJECTDIR}/_ext/1361460060/drv_adc_static.o.d" -o ${OBJECTDIR}/_ext/1361460060/drv_adc_static.o ../src/system_config/default/framework/driver/adc/src/drv_adc_static.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 ${OBJECTDIR}/_ext/1047219354/drv_oc_mapping.o: ../src/system_config/default/framework/driver/oc/src/drv_oc_mapping.c  .generated_files/19e0c806cc5654d625be58294fd09c252343da84.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/1047219354/drv_oc_mapping.o: ../src/system_config/default/framework/driver/oc/src/drv_oc_mapping.c  .generated_files/4bc572c38ae5be16d60511238990c9e93383972b.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/1047219354" 
 	@${RM} ${OBJECTDIR}/_ext/1047219354/drv_oc_mapping.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1047219354/drv_oc_mapping.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -MP -MMD -MF "${OBJECTDIR}/_ext/1047219354/drv_oc_mapping.o.d" -o ${OBJECTDIR}/_ext/1047219354/drv_oc_mapping.o ../src/system_config/default/framework/driver/oc/src/drv_oc_mapping.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 ${OBJECTDIR}/_ext/1047219354/drv_oc_static.o: ../src/system_config/default/framework/driver/oc/src/drv_oc_static.c  .generated_files/462cce50a730a90e221d9a3cad02e916f70c9555.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/1047219354/drv_oc_static.o: ../src/system_config/default/framework/driver/oc/src/drv_oc_static.c  .generated_files/580e9ddf4eb69909ff98e6bb9db5f5912cd3ca7e.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/1047219354" 
 	@${RM} ${OBJECTDIR}/_ext/1047219354/drv_oc_static.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1047219354/drv_oc_static.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -MP -MMD -MF "${OBJECTDIR}/_ext/1047219354/drv_oc_static.o.d" -o ${OBJECTDIR}/_ext/1047219354/drv_oc_static.o ../src/system_config/default/framework/driver/oc/src/drv_oc_static.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 ${OBJECTDIR}/_ext/1407244131/drv_tmr_static.o: ../src/system_config/default/framework/driver/tmr/src/drv_tmr_static.c  .generated_files/e0c271e0e255eeb5cd0583b90f663491d0da7c65.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/1407244131/drv_tmr_static.o: ../src/system_config/default/framework/driver/tmr/src/drv_tmr_static.c  .generated_files/9328ef2d2826823c23d2e7e2336b83167904b612.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/1407244131" 
 	@${RM} ${OBJECTDIR}/_ext/1407244131/drv_tmr_static.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1407244131/drv_tmr_static.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -MP -MMD -MF "${OBJECTDIR}/_ext/1407244131/drv_tmr_static.o.d" -o ${OBJECTDIR}/_ext/1407244131/drv_tmr_static.o ../src/system_config/default/framework/driver/tmr/src/drv_tmr_static.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 ${OBJECTDIR}/_ext/1407244131/drv_tmr_mapping.o: ../src/system_config/default/framework/driver/tmr/src/drv_tmr_mapping.c  .generated_files/e1660e5b0debc0d0c917236c05f8a2501bd98767.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/1407244131/drv_tmr_mapping.o: ../src/system_config/default/framework/driver/tmr/src/drv_tmr_mapping.c  .generated_files/c7b7e1dbd3e89e06b7707037f1a1e470bc872c1b.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/1407244131" 
 	@${RM} ${OBJECTDIR}/_ext/1407244131/drv_tmr_mapping.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1407244131/drv_tmr_mapping.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -MP -MMD -MF "${OBJECTDIR}/_ext/1407244131/drv_tmr_mapping.o.d" -o ${OBJECTDIR}/_ext/1407244131/drv_tmr_mapping.o ../src/system_config/default/framework/driver/tmr/src/drv_tmr_mapping.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 ${OBJECTDIR}/_ext/327000265/drv_usart_mapping.o: ../src/system_config/default/framework/driver/usart/src/drv_usart_mapping.c  .generated_files/b51183acb6b787b6b601bbd5218b01226f90a19f.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/327000265/drv_usart_mapping.o: ../src/system_config/default/framework/driver/usart/src/drv_usart_mapping.c  .generated_files/6459484be56c02e749da6c6ba6c38b83e4cf37fa.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/327000265" 
 	@${RM} ${OBJECTDIR}/_ext/327000265/drv_usart_mapping.o.d 
 	@${RM} ${OBJECTDIR}/_ext/327000265/drv_usart_mapping.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -MP -MMD -MF "${OBJECTDIR}/_ext/327000265/drv_usart_mapping.o.d" -o ${OBJECTDIR}/_ext/327000265/drv_usart_mapping.o ../src/system_config/default/framework/driver/usart/src/drv_usart_mapping.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 ${OBJECTDIR}/_ext/327000265/drv_usart_static.o: ../src/system_config/default/framework/driver/usart/src/drv_usart_static.c  .generated_files/f626ceef7b6c980c8401ddf13e7d5a5350afdaff.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/327000265/drv_usart_static.o: ../src/system_config/default/framework/driver/usart/src/drv_usart_static.c  .generated_files/8460080fad20f8ef47da12f7e6c8021d9de0b83c.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/327000265" 
 	@${RM} ${OBJECTDIR}/_ext/327000265/drv_usart_static.o.d 
 	@${RM} ${OBJECTDIR}/_ext/327000265/drv_usart_static.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -MP -MMD -MF "${OBJECTDIR}/_ext/327000265/drv_usart_static.o.d" -o ${OBJECTDIR}/_ext/327000265/drv_usart_static.o ../src/system_config/default/framework/driver/usart/src/drv_usart_static.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 ${OBJECTDIR}/_ext/327000265/drv_usart_static_byte_model.o: ../src/system_config/default/framework/driver/usart/src/drv_usart_static_byte_model.c  .generated_files/32d7c977302677ce965bf2663b708497f6003165.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/327000265/drv_usart_static_byte_model.o: ../src/system_config/default/framework/driver/usart/src/drv_usart_static_byte_model.c  .generated_files/7ea5edd9aa00f0f92ad599e2c2e0b1d48c0d8a9c.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/327000265" 
 	@${RM} ${OBJECTDIR}/_ext/327000265/drv_usart_static_byte_model.o.d 
 	@${RM} ${OBJECTDIR}/_ext/327000265/drv_usart_static_byte_model.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -MP -MMD -MF "${OBJECTDIR}/_ext/327000265/drv_usart_static_byte_model.o.d" -o ${OBJECTDIR}/_ext/327000265/drv_usart_static_byte_model.o ../src/system_config/default/framework/driver/usart/src/drv_usart_static_byte_model.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 ${OBJECTDIR}/_ext/639803181/sys_clk_pic32mx.o: ../src/system_config/default/framework/system/clk/src/sys_clk_pic32mx.c  .generated_files/dd31071caca2f4a0804e77c2b0e93ff88b0bd455.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/639803181/sys_clk_pic32mx.o: ../src/system_config/default/framework/system/clk/src/sys_clk_pic32mx.c  .generated_files/ef3b526fa21d32d1d26db0c54132b0816e6ddce0.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/639803181" 
 	@${RM} ${OBJECTDIR}/_ext/639803181/sys_clk_pic32mx.o.d 
 	@${RM} ${OBJECTDIR}/_ext/639803181/sys_clk_pic32mx.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -MP -MMD -MF "${OBJECTDIR}/_ext/639803181/sys_clk_pic32mx.o.d" -o ${OBJECTDIR}/_ext/639803181/sys_clk_pic32mx.o ../src/system_config/default/framework/system/clk/src/sys_clk_pic32mx.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 ${OBJECTDIR}/_ext/340578644/sys_devcon.o: ../src/system_config/default/framework/system/devcon/src/sys_devcon.c  .generated_files/8cb3edba933e6057a556d4c1d7e5870e7830ed7f.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/340578644/sys_devcon.o: ../src/system_config/default/framework/system/devcon/src/sys_devcon.c  .generated_files/69b0b86a6c56f91b5d80a63460297f4c7e22601d.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/340578644" 
 	@${RM} ${OBJECTDIR}/_ext/340578644/sys_devcon.o.d 
 	@${RM} ${OBJECTDIR}/_ext/340578644/sys_devcon.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -MP -MMD -MF "${OBJECTDIR}/_ext/340578644/sys_devcon.o.d" -o ${OBJECTDIR}/_ext/340578644/sys_devcon.o ../src/system_config/default/framework/system/devcon/src/sys_devcon.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 ${OBJECTDIR}/_ext/340578644/sys_devcon_pic32mx.o: ../src/system_config/default/framework/system/devcon/src/sys_devcon_pic32mx.c  .generated_files/82b7740547dbe66f81d17ac818c08c6b5052b60.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/340578644/sys_devcon_pic32mx.o: ../src/system_config/default/framework/system/devcon/src/sys_devcon_pic32mx.c  .generated_files/be5794d9b36f362a557c1e2b6f7c736ace50eb20.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/340578644" 
 	@${RM} ${OBJECTDIR}/_ext/340578644/sys_devcon_pic32mx.o.d 
 	@${RM} ${OBJECTDIR}/_ext/340578644/sys_devcon_pic32mx.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -MP -MMD -MF "${OBJECTDIR}/_ext/340578644/sys_devcon_pic32mx.o.d" -o ${OBJECTDIR}/_ext/340578644/sys_devcon_pic32mx.o ../src/system_config/default/framework/system/devcon/src/sys_devcon_pic32mx.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 ${OBJECTDIR}/_ext/822048611/sys_ports_static.o: ../src/system_config/default/framework/system/ports/src/sys_ports_static.c  .generated_files/37030950a9ee57d8edc26f94114e2e1751463dbc.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/822048611/sys_ports_static.o: ../src/system_config/default/framework/system/ports/src/sys_ports_static.c  .generated_files/daa6dc7ceadd45ca67c14d8dd54dd53f79c229.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/822048611" 
 	@${RM} ${OBJECTDIR}/_ext/822048611/sys_ports_static.o.d 
 	@${RM} ${OBJECTDIR}/_ext/822048611/sys_ports_static.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -MP -MMD -MF "${OBJECTDIR}/_ext/822048611/sys_ports_static.o.d" -o ${OBJECTDIR}/_ext/822048611/sys_ports_static.o ../src/system_config/default/framework/system/ports/src/sys_ports_static.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 ${OBJECTDIR}/_ext/1688732426/system_init.o: ../src/system_config/default/system_init.c  .generated_files/b6665150f759ddd37ef7c34f8ab400b3cde4c6d4.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/1688732426/system_init.o: ../src/system_config/default/system_init.c  .generated_files/6dc7cd423ffed5c31ffaecd3565d6d263e690543.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/1688732426" 
 	@${RM} ${OBJECTDIR}/_ext/1688732426/system_init.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1688732426/system_init.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -MP -MMD -MF "${OBJECTDIR}/_ext/1688732426/system_init.o.d" -o ${OBJECTDIR}/_ext/1688732426/system_init.o ../src/system_config/default/system_init.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 ${OBJECTDIR}/_ext/1688732426/system_interrupt.o: ../src/system_config/default/system_interrupt.c  .generated_files/c938e16079886fa929375f3e7e35976a45f55d1c.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/1688732426/system_interrupt.o: ../src/system_config/default/system_interrupt.c  .generated_files/9dd37a9fc7304b857aaab9cbb3caf2e65438179b.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/1688732426" 
 	@${RM} ${OBJECTDIR}/_ext/1688732426/system_interrupt.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1688732426/system_interrupt.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -MP -MMD -MF "${OBJECTDIR}/_ext/1688732426/system_interrupt.o.d" -o ${OBJECTDIR}/_ext/1688732426/system_interrupt.o ../src/system_config/default/system_interrupt.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 ${OBJECTDIR}/_ext/1688732426/system_exceptions.o: ../src/system_config/default/system_exceptions.c  .generated_files/b1b24d40bd344068e5b737a4361bdab368c36dfe.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/1688732426/system_exceptions.o: ../src/system_config/default/system_exceptions.c  .generated_files/c34d848a9736d3322502cdc23a9233d795c4f6f2.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/1688732426" 
 	@${RM} ${OBJECTDIR}/_ext/1688732426/system_exceptions.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1688732426/system_exceptions.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -MP -MMD -MF "${OBJECTDIR}/_ext/1688732426/system_exceptions.o.d" -o ${OBJECTDIR}/_ext/1688732426/system_exceptions.o ../src/system_config/default/system_exceptions.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 ${OBJECTDIR}/_ext/1688732426/system_tasks.o: ../src/system_config/default/system_tasks.c  .generated_files/eadc311184d7d9c65c2bb9d29656f3986102f4e5.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/1688732426/system_tasks.o: ../src/system_config/default/system_tasks.c  .generated_files/29161ad0763a04c7bb40d132fffb8039f8fe55a3.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/1688732426" 
 	@${RM} ${OBJECTDIR}/_ext/1688732426/system_tasks.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1688732426/system_tasks.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -MP -MMD -MF "${OBJECTDIR}/_ext/1688732426/system_tasks.o.d" -o ${OBJECTDIR}/_ext/1688732426/system_tasks.o ../src/system_config/default/system_tasks.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 else
 ${OBJECTDIR}/_ext/1360937237/app.o: ../src/app.c  .generated_files/3c7e597e11503e6290702cb5fce00f029c3ea1eb.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/1360937237/app.o: ../src/app.c  .generated_files/24e344848e8d92537b949e701ee8a647ba6cb3cb.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/app.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/app.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/app.o.d" -o ${OBJECTDIR}/_ext/1360937237/app.o ../src/app.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 ${OBJECTDIR}/_ext/1360937237/main.o: ../src/main.c  .generated_files/5b8de73819af96ed2c937c70a24f37c3ae3127fe.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/1360937237/main.o: ../src/main.c  .generated_files/e2ea9c4c9f8ac1ac05b79f951e4a839470c65d19.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/main.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/main.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/main.o.d" -o ${OBJECTDIR}/_ext/1360937237/main.o ../src/main.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 ${OBJECTDIR}/_ext/1360937237/gestPWM.o: ../src/gestPWM.c  .generated_files/8151813f9fdea29b00b1b33045ff49d1ff756908.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/1360937237/gestPWM.o: ../src/gestPWM.c  .generated_files/d72daab0bfffd28c18d058d20099cd3780eb0c08.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/gestPWM.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/gestPWM.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/gestPWM.o.d" -o ${OBJECTDIR}/_ext/1360937237/gestPWM.o ../src/gestPWM.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 ${OBJECTDIR}/_ext/1360937237/GesFifoTh32.o: ../src/GesFifoTh32.c  .generated_files/163104be980192b6d8919575defe4853b3bd8c13.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/1360937237/GesFifoTh32.o: ../src/GesFifoTh32.c  .generated_files/d5644849e19b3fd368a9bcfea191257d5e4c7abf.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/GesFifoTh32.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/GesFifoTh32.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/GesFifoTh32.o.d" -o ${OBJECTDIR}/_ext/1360937237/GesFifoTh32.o ../src/GesFifoTh32.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 ${OBJECTDIR}/_ext/1360937237/Mc32CalCrc16.o: ../src/Mc32CalCrc16.c  .generated_files/de3ad6674ea271ed5b24192cbd2050da60a1d143.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/1360937237/Mc32CalCrc16.o: ../src/Mc32CalCrc16.c  .generated_files/1241c23e349573c741b1d4e354f0daefcaf5e91e.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/Mc32CalCrc16.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/Mc32CalCrc16.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/Mc32CalCrc16.o.d" -o ${OBJECTDIR}/_ext/1360937237/Mc32CalCrc16.o ../src/Mc32CalCrc16.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 ${OBJECTDIR}/_ext/1360937237/Mc32gest_RS232.o: ../src/Mc32gest_RS232.c  .generated_files/77e3fb5a4255bebff3eb420de1ff3f598e7882ee.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/Mc32gest_RS232.o.d 
@@ -536,132 +621,265 @@ ${OBJECTDIR}/_ext/1623445232/Mc32CoreTimer.o: ../../../../../../../bsp/pic32mx_s
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -Wall -mcci -MP -MMD -MF "${OBJECTDIR}/_ext/1623445232/Mc32CoreTimer.o.d" -o ${OBJECTDIR}/_ext/1623445232/Mc32CoreTimer.o ../../../../../../../bsp/pic32mx_skes/Mc32CoreTimer.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
 ${OBJECTDIR}/_ext/1361460060/drv_adc_static.o: ../src/system_config/default/framework/driver/adc/src/drv_adc_static.c  .generated_files/a31c9eb9a1856837dd5baf9dc076f4f0d39714bf.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/1360937237/Mc32gest_RS232.o: ../src/Mc32gest_RS232.c  .generated_files/c535fd0e6edda47ae46fc5f77cd74280e696dc72.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
+	@${RM} ${OBJECTDIR}/_ext/1360937237/Mc32gest_RS232.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1360937237/Mc32gest_RS232.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../bsp/pic32mx_skes" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/Mc32gest_RS232.o.d" -o ${OBJECTDIR}/_ext/1360937237/Mc32gest_RS232.o ../src/Mc32gest_RS232.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/_ext/326400065/bsp.o: ../../../../../../bsp/pic32mx_skes/bsp.c  .generated_files/fdf8cf6d638125241f6849d754eb58aecdc954d5.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+	@${MKDIR} "${OBJECTDIR}/_ext/326400065" 
+	@${RM} ${OBJECTDIR}/_ext/326400065/bsp.o.d 
+	@${RM} ${OBJECTDIR}/_ext/326400065/bsp.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../bsp/pic32mx_skes" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/326400065/bsp.o.d" -o ${OBJECTDIR}/_ext/326400065/bsp.o ../../../../../../bsp/pic32mx_skes/bsp.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/_ext/326400065/Mc32Delays.o: ../../../../../../bsp/pic32mx_skes/Mc32Delays.c  .generated_files/c84dd211a63c67aa877f15a33594375c840bbbc7.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+	@${MKDIR} "${OBJECTDIR}/_ext/326400065" 
+	@${RM} ${OBJECTDIR}/_ext/326400065/Mc32Delays.o.d 
+	@${RM} ${OBJECTDIR}/_ext/326400065/Mc32Delays.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../bsp/pic32mx_skes" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/326400065/Mc32Delays.o.d" -o ${OBJECTDIR}/_ext/326400065/Mc32Delays.o ../../../../../../bsp/pic32mx_skes/Mc32Delays.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/_ext/326400065/Mc32DriverAdc.o: ../../../../../../bsp/pic32mx_skes/Mc32DriverAdc.c  .generated_files/fdf5fa7614d9938ffc466cbaf2394050939a2375.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+	@${MKDIR} "${OBJECTDIR}/_ext/326400065" 
+	@${RM} ${OBJECTDIR}/_ext/326400065/Mc32DriverAdc.o.d 
+	@${RM} ${OBJECTDIR}/_ext/326400065/Mc32DriverAdc.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../bsp/pic32mx_skes" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/326400065/Mc32DriverAdc.o.d" -o ${OBJECTDIR}/_ext/326400065/Mc32DriverAdc.o ../../../../../../bsp/pic32mx_skes/Mc32DriverAdc.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/_ext/326400065/Mc32DriverAdcAlt.o: ../../../../../../bsp/pic32mx_skes/Mc32DriverAdcAlt.c  .generated_files/46bef0289ee295584defc8e589469aa8ae9ec33d.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+	@${MKDIR} "${OBJECTDIR}/_ext/326400065" 
+	@${RM} ${OBJECTDIR}/_ext/326400065/Mc32DriverAdcAlt.o.d 
+	@${RM} ${OBJECTDIR}/_ext/326400065/Mc32DriverAdcAlt.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../bsp/pic32mx_skes" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/326400065/Mc32DriverAdcAlt.o.d" -o ${OBJECTDIR}/_ext/326400065/Mc32DriverAdcAlt.o ../../../../../../bsp/pic32mx_skes/Mc32DriverAdcAlt.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/_ext/326400065/Mc32DriverLcd.o: ../../../../../../bsp/pic32mx_skes/Mc32DriverLcd.c  .generated_files/7a306db449dac5c1aa7ed9df0cc10f400cbca5c0.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+	@${MKDIR} "${OBJECTDIR}/_ext/326400065" 
+	@${RM} ${OBJECTDIR}/_ext/326400065/Mc32DriverLcd.o.d 
+	@${RM} ${OBJECTDIR}/_ext/326400065/Mc32DriverLcd.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../bsp/pic32mx_skes" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/326400065/Mc32DriverLcd.o.d" -o ${OBJECTDIR}/_ext/326400065/Mc32DriverLcd.o ../../../../../../bsp/pic32mx_skes/Mc32DriverLcd.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/_ext/326400065/Mc32CoreTimer.o: ../../../../../../bsp/pic32mx_skes/Mc32CoreTimer.c  .generated_files/2da31461f2898dcfbbab6f66c9d71249c276105e.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+	@${MKDIR} "${OBJECTDIR}/_ext/326400065" 
+	@${RM} ${OBJECTDIR}/_ext/326400065/Mc32CoreTimer.o.d 
+	@${RM} ${OBJECTDIR}/_ext/326400065/Mc32CoreTimer.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../bsp/pic32mx_skes" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/326400065/Mc32CoreTimer.o.d" -o ${OBJECTDIR}/_ext/326400065/Mc32CoreTimer.o ../../../../../../bsp/pic32mx_skes/Mc32CoreTimer.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/_ext/711155467/sys_int_pic32.o: ../../../../../../framework/system/int/src/sys_int_pic32.c  .generated_files/c95578f3a3f2e1989c7b9f888c1c6a8b86c1c8d0.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+	@${MKDIR} "${OBJECTDIR}/_ext/711155467" 
+	@${RM} ${OBJECTDIR}/_ext/711155467/sys_int_pic32.o.d 
+	@${RM} ${OBJECTDIR}/_ext/711155467/sys_int_pic32.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../bsp/pic32mx_skes" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/711155467/sys_int_pic32.o.d" -o ${OBJECTDIR}/_ext/711155467/sys_int_pic32.o ../../../../../../framework/system/int/src/sys_int_pic32.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+else
+${OBJECTDIR}/_ext/1361460060/drv_adc_static.o: ../src/system_config/default/framework/driver/adc/src/drv_adc_static.c  .generated_files/53bdf68626fef01bac66e34f12839b7c25a69b66.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/1361460060" 
 	@${RM} ${OBJECTDIR}/_ext/1361460060/drv_adc_static.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1361460060/drv_adc_static.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -Wall -mcci -MP -MMD -MF "${OBJECTDIR}/_ext/1361460060/drv_adc_static.o.d" -o ${OBJECTDIR}/_ext/1361460060/drv_adc_static.o ../src/system_config/default/framework/driver/adc/src/drv_adc_static.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 ${OBJECTDIR}/_ext/1047219354/drv_oc_mapping.o: ../src/system_config/default/framework/driver/oc/src/drv_oc_mapping.c  .generated_files/3540358ab6e128bb7a7f3a90efec8da9196d3061.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/1047219354/drv_oc_mapping.o: ../src/system_config/default/framework/driver/oc/src/drv_oc_mapping.c  .generated_files/9143dd99985a1cff373ef5e7b8f4f233940ed33f.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/1047219354" 
 	@${RM} ${OBJECTDIR}/_ext/1047219354/drv_oc_mapping.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1047219354/drv_oc_mapping.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -Wall -mcci -MP -MMD -MF "${OBJECTDIR}/_ext/1047219354/drv_oc_mapping.o.d" -o ${OBJECTDIR}/_ext/1047219354/drv_oc_mapping.o ../src/system_config/default/framework/driver/oc/src/drv_oc_mapping.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 ${OBJECTDIR}/_ext/1047219354/drv_oc_static.o: ../src/system_config/default/framework/driver/oc/src/drv_oc_static.c  .generated_files/7d9e663fd2a8b2b3f23f998273b671b242cefa8e.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/1047219354/drv_oc_static.o: ../src/system_config/default/framework/driver/oc/src/drv_oc_static.c  .generated_files/4043a564ef83108fa5b5e909141558c50e82df6.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/1047219354" 
 	@${RM} ${OBJECTDIR}/_ext/1047219354/drv_oc_static.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1047219354/drv_oc_static.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -Wall -mcci -MP -MMD -MF "${OBJECTDIR}/_ext/1047219354/drv_oc_static.o.d" -o ${OBJECTDIR}/_ext/1047219354/drv_oc_static.o ../src/system_config/default/framework/driver/oc/src/drv_oc_static.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 ${OBJECTDIR}/_ext/1407244131/drv_tmr_static.o: ../src/system_config/default/framework/driver/tmr/src/drv_tmr_static.c  .generated_files/ca649c311d440570e443366a0fe8fc0701807a9b.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/1407244131/drv_tmr_static.o: ../src/system_config/default/framework/driver/tmr/src/drv_tmr_static.c  .generated_files/753a8c0c4538b7d0471c67346755645050d54be5.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/1407244131" 
 	@${RM} ${OBJECTDIR}/_ext/1407244131/drv_tmr_static.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1407244131/drv_tmr_static.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -Wall -mcci -MP -MMD -MF "${OBJECTDIR}/_ext/1407244131/drv_tmr_static.o.d" -o ${OBJECTDIR}/_ext/1407244131/drv_tmr_static.o ../src/system_config/default/framework/driver/tmr/src/drv_tmr_static.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 ${OBJECTDIR}/_ext/1407244131/drv_tmr_mapping.o: ../src/system_config/default/framework/driver/tmr/src/drv_tmr_mapping.c  .generated_files/e0bc3a942ebfda8327975b1c60c69c1b74252879.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/1407244131/drv_tmr_mapping.o: ../src/system_config/default/framework/driver/tmr/src/drv_tmr_mapping.c  .generated_files/5171299cb267f051023ff11516bf023545215529.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/1407244131" 
 	@${RM} ${OBJECTDIR}/_ext/1407244131/drv_tmr_mapping.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1407244131/drv_tmr_mapping.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -Wall -mcci -MP -MMD -MF "${OBJECTDIR}/_ext/1407244131/drv_tmr_mapping.o.d" -o ${OBJECTDIR}/_ext/1407244131/drv_tmr_mapping.o ../src/system_config/default/framework/driver/tmr/src/drv_tmr_mapping.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 ${OBJECTDIR}/_ext/327000265/drv_usart_mapping.o: ../src/system_config/default/framework/driver/usart/src/drv_usart_mapping.c  .generated_files/966b4a03cf3464308095146a3aff7d277fae5f.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/327000265/drv_usart_mapping.o: ../src/system_config/default/framework/driver/usart/src/drv_usart_mapping.c  .generated_files/82cc9be6045ebc859154409b6096436a67c09d94.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/327000265" 
 	@${RM} ${OBJECTDIR}/_ext/327000265/drv_usart_mapping.o.d 
 	@${RM} ${OBJECTDIR}/_ext/327000265/drv_usart_mapping.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -Wall -mcci -MP -MMD -MF "${OBJECTDIR}/_ext/327000265/drv_usart_mapping.o.d" -o ${OBJECTDIR}/_ext/327000265/drv_usart_mapping.o ../src/system_config/default/framework/driver/usart/src/drv_usart_mapping.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 ${OBJECTDIR}/_ext/327000265/drv_usart_static.o: ../src/system_config/default/framework/driver/usart/src/drv_usart_static.c  .generated_files/3494ef87c8cbe76c2be6a171814712bb534bebba.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/327000265/drv_usart_static.o: ../src/system_config/default/framework/driver/usart/src/drv_usart_static.c  .generated_files/c8f5b00caa04bcaae20675ed6580aa96284c1121.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/327000265" 
 	@${RM} ${OBJECTDIR}/_ext/327000265/drv_usart_static.o.d 
 	@${RM} ${OBJECTDIR}/_ext/327000265/drv_usart_static.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -Wall -mcci -MP -MMD -MF "${OBJECTDIR}/_ext/327000265/drv_usart_static.o.d" -o ${OBJECTDIR}/_ext/327000265/drv_usart_static.o ../src/system_config/default/framework/driver/usart/src/drv_usart_static.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 ${OBJECTDIR}/_ext/327000265/drv_usart_static_byte_model.o: ../src/system_config/default/framework/driver/usart/src/drv_usart_static_byte_model.c  .generated_files/e47c31d8c5fe4e6ff1bde66cdb0b1b168e155e18.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/327000265/drv_usart_static_byte_model.o: ../src/system_config/default/framework/driver/usart/src/drv_usart_static_byte_model.c  .generated_files/eec68453b61c9a85a50fdfcff1b52cecc7aa5c2a.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/327000265" 
 	@${RM} ${OBJECTDIR}/_ext/327000265/drv_usart_static_byte_model.o.d 
 	@${RM} ${OBJECTDIR}/_ext/327000265/drv_usart_static_byte_model.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -Wall -mcci -MP -MMD -MF "${OBJECTDIR}/_ext/327000265/drv_usart_static_byte_model.o.d" -o ${OBJECTDIR}/_ext/327000265/drv_usart_static_byte_model.o ../src/system_config/default/framework/driver/usart/src/drv_usart_static_byte_model.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 ${OBJECTDIR}/_ext/639803181/sys_clk_pic32mx.o: ../src/system_config/default/framework/system/clk/src/sys_clk_pic32mx.c  .generated_files/b9468d3c36ff1e81281c529da8e3ea8a1349e473.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/639803181/sys_clk_pic32mx.o: ../src/system_config/default/framework/system/clk/src/sys_clk_pic32mx.c  .generated_files/df27ef8793fbdc953a43571460e6a3fe3a44d421.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/639803181" 
 	@${RM} ${OBJECTDIR}/_ext/639803181/sys_clk_pic32mx.o.d 
 	@${RM} ${OBJECTDIR}/_ext/639803181/sys_clk_pic32mx.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -Wall -mcci -MP -MMD -MF "${OBJECTDIR}/_ext/639803181/sys_clk_pic32mx.o.d" -o ${OBJECTDIR}/_ext/639803181/sys_clk_pic32mx.o ../src/system_config/default/framework/system/clk/src/sys_clk_pic32mx.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 ${OBJECTDIR}/_ext/340578644/sys_devcon.o: ../src/system_config/default/framework/system/devcon/src/sys_devcon.c  .generated_files/76fdef8bec907fec2c7d9cd433fbed48d6cf318f.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/340578644/sys_devcon.o: ../src/system_config/default/framework/system/devcon/src/sys_devcon.c  .generated_files/9bbf542a6b36142cc4cf56f5ce768d83a5013047.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/340578644" 
 	@${RM} ${OBJECTDIR}/_ext/340578644/sys_devcon.o.d 
 	@${RM} ${OBJECTDIR}/_ext/340578644/sys_devcon.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -Wall -mcci -MP -MMD -MF "${OBJECTDIR}/_ext/340578644/sys_devcon.o.d" -o ${OBJECTDIR}/_ext/340578644/sys_devcon.o ../src/system_config/default/framework/system/devcon/src/sys_devcon.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 ${OBJECTDIR}/_ext/340578644/sys_devcon_pic32mx.o: ../src/system_config/default/framework/system/devcon/src/sys_devcon_pic32mx.c  .generated_files/f871328d77372095a676292a5d29886ed62a977e.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/340578644/sys_devcon_pic32mx.o: ../src/system_config/default/framework/system/devcon/src/sys_devcon_pic32mx.c  .generated_files/fa8c56e101a04c84eec6b9c262ce492aec610afa.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/340578644" 
 	@${RM} ${OBJECTDIR}/_ext/340578644/sys_devcon_pic32mx.o.d 
 	@${RM} ${OBJECTDIR}/_ext/340578644/sys_devcon_pic32mx.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -Wall -mcci -MP -MMD -MF "${OBJECTDIR}/_ext/340578644/sys_devcon_pic32mx.o.d" -o ${OBJECTDIR}/_ext/340578644/sys_devcon_pic32mx.o ../src/system_config/default/framework/system/devcon/src/sys_devcon_pic32mx.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 ${OBJECTDIR}/_ext/822048611/sys_ports_static.o: ../src/system_config/default/framework/system/ports/src/sys_ports_static.c  .generated_files/cbdae6ff746f818ffa3c122dee270d6c73d8bcbd.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/822048611/sys_ports_static.o: ../src/system_config/default/framework/system/ports/src/sys_ports_static.c  .generated_files/14bea63574145f9156ca24fbcfc4101ec61fdf06.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/822048611" 
 	@${RM} ${OBJECTDIR}/_ext/822048611/sys_ports_static.o.d 
 	@${RM} ${OBJECTDIR}/_ext/822048611/sys_ports_static.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -Wall -mcci -MP -MMD -MF "${OBJECTDIR}/_ext/822048611/sys_ports_static.o.d" -o ${OBJECTDIR}/_ext/822048611/sys_ports_static.o ../src/system_config/default/framework/system/ports/src/sys_ports_static.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 ${OBJECTDIR}/_ext/1688732426/system_init.o: ../src/system_config/default/system_init.c  .generated_files/61b9e4526631e5b1023b3fc6433b38ee6d1fe337.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/1688732426/system_init.o: ../src/system_config/default/system_init.c  .generated_files/b11e3e7aed49f9667daad8d0fdb21357e28546bd.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/1688732426" 
 	@${RM} ${OBJECTDIR}/_ext/1688732426/system_init.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1688732426/system_init.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -Wall -mcci -MP -MMD -MF "${OBJECTDIR}/_ext/1688732426/system_init.o.d" -o ${OBJECTDIR}/_ext/1688732426/system_init.o ../src/system_config/default/system_init.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 ${OBJECTDIR}/_ext/1688732426/system_interrupt.o: ../src/system_config/default/system_interrupt.c  .generated_files/7cdbf47df18bf3efc9f68a24567e638679cc6495.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/1688732426/system_interrupt.o: ../src/system_config/default/system_interrupt.c  .generated_files/30a508b9ff31f94df301c9e475c6d6819351caf0.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/1688732426" 
 	@${RM} ${OBJECTDIR}/_ext/1688732426/system_interrupt.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1688732426/system_interrupt.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -Wall -mcci -MP -MMD -MF "${OBJECTDIR}/_ext/1688732426/system_interrupt.o.d" -o ${OBJECTDIR}/_ext/1688732426/system_interrupt.o ../src/system_config/default/system_interrupt.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 ${OBJECTDIR}/_ext/1688732426/system_exceptions.o: ../src/system_config/default/system_exceptions.c  .generated_files/4889e2053086ed38214fb15f09f65098a67004b8.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/1688732426/system_exceptions.o: ../src/system_config/default/system_exceptions.c  .generated_files/4738f2de1cbd8687bf15fe7d750d32225a008310.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/1688732426" 
 	@${RM} ${OBJECTDIR}/_ext/1688732426/system_exceptions.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1688732426/system_exceptions.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -Wall -mcci -MP -MMD -MF "${OBJECTDIR}/_ext/1688732426/system_exceptions.o.d" -o ${OBJECTDIR}/_ext/1688732426/system_exceptions.o ../src/system_config/default/system_exceptions.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 ${OBJECTDIR}/_ext/1688732426/system_tasks.o: ../src/system_config/default/system_tasks.c  .generated_files/b88f0d6ab4891247ec0d47a4280d73f812a7d1d7.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/1688732426/system_tasks.o: ../src/system_config/default/system_tasks.c  .generated_files/a3970861957dca6f9ca461bd4c78fcf14f5e1486.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/1688732426" 
 	@${RM} ${OBJECTDIR}/_ext/1688732426/system_tasks.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1688732426/system_tasks.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -Wall -mcci -MP -MMD -MF "${OBJECTDIR}/_ext/1688732426/system_tasks.o.d" -o ${OBJECTDIR}/_ext/1688732426/system_tasks.o ../src/system_config/default/system_tasks.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 else
 ${OBJECTDIR}/_ext/1360937237/app.o: ../src/app.c  .generated_files/96bcf5918c0e6161c8524af11635f6c4fbdb9aef.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/1360937237/app.o: ../src/app.c  .generated_files/7887eae63c8e8e02cbedc4f8072ca878a0e0a0af.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/app.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/app.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -Wall -mcci -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/app.o.d" -o ${OBJECTDIR}/_ext/1360937237/app.o ../src/app.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 ${OBJECTDIR}/_ext/1360937237/main.o: ../src/main.c  .generated_files/4c2ab42a5de41c68642f7f29968c0662f86af8c3.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/1360937237/main.o: ../src/main.c  .generated_files/bcc1da0a5af0534c0ed3cf377d7fafd6a8590340.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/main.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/main.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -Wall -mcci -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/main.o.d" -o ${OBJECTDIR}/_ext/1360937237/main.o ../src/main.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 ${OBJECTDIR}/_ext/1360937237/gestPWM.o: ../src/gestPWM.c  .generated_files/fdbefab53e5a066ea2f0d9af6ff44e2820d6c15b.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/1360937237/gestPWM.o: ../src/gestPWM.c  .generated_files/c7240ca629a9b435baae65be86106188f848d7b9.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/gestPWM.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/gestPWM.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -Wall -mcci -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/gestPWM.o.d" -o ${OBJECTDIR}/_ext/1360937237/gestPWM.o ../src/gestPWM.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 ${OBJECTDIR}/_ext/1360937237/GesFifoTh32.o: ../src/GesFifoTh32.c  .generated_files/4ab095f5a2a2aa2134a008be1ca250679c530395.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/1360937237/GesFifoTh32.o: ../src/GesFifoTh32.c  .generated_files/70709e7d18a50ffa901e63dca1ab8bcf14267a02.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/GesFifoTh32.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/GesFifoTh32.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -Wall -mcci -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/GesFifoTh32.o.d" -o ${OBJECTDIR}/_ext/1360937237/GesFifoTh32.o ../src/GesFifoTh32.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 ${OBJECTDIR}/_ext/1360937237/Mc32CalCrc16.o: ../src/Mc32CalCrc16.c  .generated_files/ba01696b3fb2558934870e934d19616134b1c076.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+=======
+${OBJECTDIR}/_ext/1360937237/Mc32CalCrc16.o: ../src/Mc32CalCrc16.c  .generated_files/5a63ba879bf6c592294158c5a02cbc470f9049b.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+>>>>>>> Stashed changes
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/Mc32CalCrc16.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/Mc32CalCrc16.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -Wall -mcci -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/Mc32CalCrc16.o.d" -o ${OBJECTDIR}/_ext/1360937237/Mc32CalCrc16.o ../src/Mc32CalCrc16.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+<<<<<<< Updated upstream
 ${OBJECTDIR}/_ext/1360937237/Mc32gest_RS232.o: ../src/Mc32gest_RS232.c  .generated_files/8333603c33a1dcd0dd00d032914af1744401282a.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/Mc32gest_RS232.o.d 
@@ -805,6 +1023,55 @@ ${OBJECTDIR}/_ext/1688732426/system_tasks.o: ../src/system_config/default/system
 	@${RM} ${OBJECTDIR}/_ext/1688732426/system_tasks.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1688732426/system_tasks.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../../framework" -I"../../../../../../../bsp/pic32mx_skes" -Wall -mcci -MP -MMD -MF "${OBJECTDIR}/_ext/1688732426/system_tasks.o.d" -o ${OBJECTDIR}/_ext/1688732426/system_tasks.o ../src/system_config/default/system_tasks.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+>>>>>>> Stashed changes
+=======
+${OBJECTDIR}/_ext/1360937237/Mc32gest_RS232.o: ../src/Mc32gest_RS232.c  .generated_files/6d70958b4164318919400805bf5a934d01d84b4d.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
+	@${RM} ${OBJECTDIR}/_ext/1360937237/Mc32gest_RS232.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1360937237/Mc32gest_RS232.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../bsp/pic32mx_skes" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/Mc32gest_RS232.o.d" -o ${OBJECTDIR}/_ext/1360937237/Mc32gest_RS232.o ../src/Mc32gest_RS232.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/_ext/326400065/bsp.o: ../../../../../../bsp/pic32mx_skes/bsp.c  .generated_files/b81dc6afa6295537ebcabf40f38ad69a2c3be0df.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+	@${MKDIR} "${OBJECTDIR}/_ext/326400065" 
+	@${RM} ${OBJECTDIR}/_ext/326400065/bsp.o.d 
+	@${RM} ${OBJECTDIR}/_ext/326400065/bsp.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../bsp/pic32mx_skes" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/326400065/bsp.o.d" -o ${OBJECTDIR}/_ext/326400065/bsp.o ../../../../../../bsp/pic32mx_skes/bsp.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/_ext/326400065/Mc32Delays.o: ../../../../../../bsp/pic32mx_skes/Mc32Delays.c  .generated_files/6bdcb005741538579fddf9c99d801a021d5db813.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+	@${MKDIR} "${OBJECTDIR}/_ext/326400065" 
+	@${RM} ${OBJECTDIR}/_ext/326400065/Mc32Delays.o.d 
+	@${RM} ${OBJECTDIR}/_ext/326400065/Mc32Delays.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../bsp/pic32mx_skes" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/326400065/Mc32Delays.o.d" -o ${OBJECTDIR}/_ext/326400065/Mc32Delays.o ../../../../../../bsp/pic32mx_skes/Mc32Delays.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/_ext/326400065/Mc32DriverAdc.o: ../../../../../../bsp/pic32mx_skes/Mc32DriverAdc.c  .generated_files/8e5dc0d4f0fb92d71eb680def3d8b40748f3baea.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+	@${MKDIR} "${OBJECTDIR}/_ext/326400065" 
+	@${RM} ${OBJECTDIR}/_ext/326400065/Mc32DriverAdc.o.d 
+	@${RM} ${OBJECTDIR}/_ext/326400065/Mc32DriverAdc.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../bsp/pic32mx_skes" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/326400065/Mc32DriverAdc.o.d" -o ${OBJECTDIR}/_ext/326400065/Mc32DriverAdc.o ../../../../../../bsp/pic32mx_skes/Mc32DriverAdc.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/_ext/326400065/Mc32DriverAdcAlt.o: ../../../../../../bsp/pic32mx_skes/Mc32DriverAdcAlt.c  .generated_files/d452fa37eb8da626d40894dd4e69ce2d9cb0a7fc.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+	@${MKDIR} "${OBJECTDIR}/_ext/326400065" 
+	@${RM} ${OBJECTDIR}/_ext/326400065/Mc32DriverAdcAlt.o.d 
+	@${RM} ${OBJECTDIR}/_ext/326400065/Mc32DriverAdcAlt.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../bsp/pic32mx_skes" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/326400065/Mc32DriverAdcAlt.o.d" -o ${OBJECTDIR}/_ext/326400065/Mc32DriverAdcAlt.o ../../../../../../bsp/pic32mx_skes/Mc32DriverAdcAlt.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/_ext/326400065/Mc32DriverLcd.o: ../../../../../../bsp/pic32mx_skes/Mc32DriverLcd.c  .generated_files/a31e8f660a70ddd547c4c801a195dbeabd3b1545.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+	@${MKDIR} "${OBJECTDIR}/_ext/326400065" 
+	@${RM} ${OBJECTDIR}/_ext/326400065/Mc32DriverLcd.o.d 
+	@${RM} ${OBJECTDIR}/_ext/326400065/Mc32DriverLcd.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../bsp/pic32mx_skes" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/326400065/Mc32DriverLcd.o.d" -o ${OBJECTDIR}/_ext/326400065/Mc32DriverLcd.o ../../../../../../bsp/pic32mx_skes/Mc32DriverLcd.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/_ext/326400065/Mc32CoreTimer.o: ../../../../../../bsp/pic32mx_skes/Mc32CoreTimer.c  .generated_files/49eb2db7b8d90aac2c8bd6a9407b2eaa223a9f98.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+	@${MKDIR} "${OBJECTDIR}/_ext/326400065" 
+	@${RM} ${OBJECTDIR}/_ext/326400065/Mc32CoreTimer.o.d 
+	@${RM} ${OBJECTDIR}/_ext/326400065/Mc32CoreTimer.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../bsp/pic32mx_skes" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/326400065/Mc32CoreTimer.o.d" -o ${OBJECTDIR}/_ext/326400065/Mc32CoreTimer.o ../../../../../../bsp/pic32mx_skes/Mc32CoreTimer.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/_ext/711155467/sys_int_pic32.o: ../../../../../../framework/system/int/src/sys_int_pic32.c  .generated_files/13104e148e34766cfebe9e97523688b27932f0f2.flag .generated_files/9c38dd73fa47c8727ca672a3ac38932765b77050.flag
+	@${MKDIR} "${OBJECTDIR}/_ext/711155467" 
+	@${RM} ${OBJECTDIR}/_ext/711155467/sys_int_pic32.o.d 
+	@${RM} ${OBJECTDIR}/_ext/711155467/sys_int_pic32.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../framework" -I"../../../../../../bsp/pic32mx_skes" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/711155467/sys_int_pic32.o.d" -o ${OBJECTDIR}/_ext/711155467/sys_int_pic32.o ../../../../../../framework/system/int/src/sys_int_pic32.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 >>>>>>> Stashed changes
 	
 endif
