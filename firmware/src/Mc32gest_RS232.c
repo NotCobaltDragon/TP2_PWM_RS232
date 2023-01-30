@@ -65,9 +65,9 @@ S_fifo descrFifoTX;
 void InitFifoComm(void)
 {    
     // Initialisation du fifo de réception
-    InitFifo ( &descrFifoRX, FIFO_RX_SIZE, fifoRX, 0 );
+    InitFifo (&descrFifoRX, FIFO_RX_SIZE, fifoRX, 0);
     // Initialisation du fifo d'émission
-    InitFifo ( &descrFifoTX, FIFO_TX_SIZE, fifoTX, 0 );
+    InitFifo (&descrFifoTX, FIFO_TX_SIZE, fifoTX, 0);
     
     // Init RTS 
     RS232_RTS = 1;   // interdit émission par l'autre
@@ -82,9 +82,7 @@ int GetMessage(S_pwmSettings *pData)
     static int commStatus = 0;
     int NbCharToRead;
     int LsbCrcControl, MsbCrcControl;
-    int8_t RxC;
     uint16_t ctrl_CRC16 = 0xFFFF;
-    uint8_t SizeByte = 0;
     uint8_t nbrCycles = 0;
     //U_manip16 RxCRC;
 

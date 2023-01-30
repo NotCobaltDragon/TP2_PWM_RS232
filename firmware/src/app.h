@@ -209,7 +209,7 @@ void APP_Initialize ( void );
     This routine must be called from SYS_Tasks() routine.
  */
 
-void APP_Tasks( void );
+void APP_Tasks(void);
 
 void APP_UpdateState(APP_STATES NewState);
 

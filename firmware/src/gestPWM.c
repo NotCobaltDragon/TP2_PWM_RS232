@@ -14,6 +14,7 @@
 #include "GestPWM.h"
 
 S_pwmSettings PWMData, PWMDataToSend ;  //For settings values
+S_ADCResults AdcResult;
 APP_DATA appData;
 
 void GPWM_Initialize(S_pwmSettings *pData)
@@ -44,35 +45,27 @@ void GPWM_Initialize(S_pwmSettings *pData)
 void GPWM_GetSettings(S_pwmSettings *pData)	
 {   
     static uint16_t Table_Avg_CH0[AVERAGE_SIZE];    //Table for rolling average
-    
     static uint16_t Table_Avg_CH1[AVERAGE_SIZE];    //Table for rolling average
 
     uint16_t Avg_ADC_CH0, Avg_ADC_CH1;  //Output average values 
     uint8_t Val_Conv;
     
-    /******---Conversion of ADC, Channel 0---***********/
-    appData.adcRes = BSP_ReadAllADC();  //Read all potentiometers
-    Table_Avg_CH0[0] = appData.adcRes.Chan0;
-    Table_Avg_CH1[0] = appData.adcRes.Chan1;
+    AdcResult = BSP_ReadAllADC();  //Read all potentiometers
+
+    Table_Avg_CH0[0] = AdcResult.Chan0;
+    Table_Avg_CH1[0] = AdcResult.Chan1;
     
     Avg_ADC_CH0 = Avg_ADC_Value(Table_Avg_CH0); //Call function to get a rolling average
+    Avg_ADC_CH1 = Avg_ADC_Value(Table_Avg_CH1); //Call function to get a rolling average   
 
-    Val_Conv = (Avg_ADC_CH0 * 2 * MOTOR_DC_BAND)/ADC_RES;  //Raw value from 0 to 198
-    pData->SpeedSetting = Val_Conv - MOTOR_DC_BAND;    //Signed value from -99 to 99
-    
-    if(pData->SpeedSetting < 0)
-    {
-        pData->absSpeed = pData->SpeedSetting * -1; //Convert negative value to positive
-    }
-    else
-    {
-        pData->absSpeed = pData->SpeedSetting;
-    }
+    /******---Conversion---***********/
+    pData->absSpeed = abs((Avg_ADC_CH0*MOTOR_DC_ABS)/ADC_RES-MOTOR_DC_BAND); //non-signed conversion: 0 to 99
+    pData->SpeedSetting = (signed)((Avg_ADC_CH0*MOTOR_DC_ABS)/ADC_RES-MOTOR_DC_BAND); //signed conversion: -99 to 99
+    pData->absSpeed = abs(pData->SpeedSetting);
 
-    /******---Conversion of ADC, Channel 1---***********/
-    Avg_ADC_CH1 = Avg_ADC_Value(Table_Avg_CH1); //Call function to get a rolling average  
     pData->absAngle = (Avg_ADC_CH1*SERVO_RANGE)/ADC_RES;    //Raw value from 0 to 180
-    pData->AngleSetting = pData->absAngle - SERVO_OFFSET;     //Signed value from -90 to 90   
+    pData->AngleSetting = (int8_t) pData->absAngle - SERVO_OFFSET;  //Signed value from -90 to 90
+    pData->absAngle = abs(pData->AngleSetting);
 }
 
 void GPWM_DispSettings(S_pwmSettings *pData, int Remote) //Display settings on LCD
@@ -101,14 +94,7 @@ void GPWM_DispSettings(S_pwmSettings *pData, int Remote) //Display settings on L
     printf_lcd("Absolute Speed   %2d", pData -> absSpeed ); 
 
     lcd_gotoxy(1, 4);
-    if(pData -> AngleSetting >= 0)  //Check if value is positive/negative
-    {
-        printf_lcd("Angle           +%2d", pData -> AngleSetting );
-    }
-    else
-    {
-        printf_lcd("Angle           %3d", pData -> AngleSetting );
-    }
+    printf_lcd("Angle           %3d", pData -> AngleSetting );
 }
 
 // Execute PWM and DC motor rotation from the structure
@@ -131,13 +117,16 @@ void GPWM_ExecPWM(S_pwmSettings *pData)
         AIN2_HBRIDGE_W = 0;
     }
     
-    //Get value for positive pulse for DC motor with formula
+    /*//Get value for positive pulse for DC motor with formula
     appData.PulseWidthOC2 = (TIMER2_MOTOR_DC/MOTOR_DC_BAND*pData->absSpeed);
     PLIB_OC_PulseWidth16BitSet(OC_ID_2, appData.PulseWidthOC2);
     
     //Get value for positive pulse for servomotor formula
     appData.PulseWidthOC3 = (pData->absAngle * ((MAX_SERVO - MIN_SERVO)/SERVO_RANGE) + MIN_SERVO);
-    PLIB_OC_PulseWidth16BitSet(OC_ID_3, appData.PulseWidthOC3);    
+    PLIB_OC_PulseWidth16BitSet(OC_ID_3, appData.PulseWidthOC3);*/
+
+    PLIB_OC_PulseWidth16BitSet(OC_ID_2, (TIMER2_MOTOR_DC/MOTOR_DC_BAND*pData->absSpeed));
+    PLIB_OC_PulseWidth16BitSet(OC_ID_3, (pData->absAngle * ((MAX_SERVO - MIN_SERVO)/SERVO_RANGE) + MIN_SERVO));  
 }
 
 // Execution PWM software
