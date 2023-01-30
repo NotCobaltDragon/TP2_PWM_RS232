@@ -3,7 +3,7 @@
 /*--------------------------------------------------------*/
 // Mc32Gest_RS232.h
 /*--------------------------------------------------------*/
-//	Description :	emission et reception spécialisée
+//	Description :	emission et reception spÃ©cialisÃ©e
 //			        pour TP2 2016-2017
 //
 //	Auteur 		: 	C. HUBER
@@ -18,10 +18,11 @@
 #include "gestPWM.h"
 
 /*--------------------------------------------------------*/
-// Définition des fonctions prototypes
+// DÃ©finition des fonctions prototypes
 /*--------------------------------------------------------*/
 
 //#define MESS_SIZE
+#define BYTE_BEGIN_MESSAGE 0xAA
 
 // prototypes des fonctions
 void InitFifoComm(void);

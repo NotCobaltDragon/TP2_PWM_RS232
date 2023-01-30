@@ -33,12 +33,12 @@ void InitFifo ( S_fifo *pDescrFifo, int32_t FifoSize, int8_t *pDebFifo, int8_t I
 {
    int32_t i;
    int8_t *pFif;
-   pDescrFifo->fifoSize =   FifoSize;
-   pDescrFifo->pDebFifo =   pDebFifo; // début du fifo
+   pDescrFifo->fifoSize = FifoSize;
+   pDescrFifo->pDebFifo = pDebFifo; // début du fifo
    // fin du fifo
-   pDescrFifo->pFinFifo =   pDebFifo + (FifoSize - 1);
-   pDescrFifo->pWrite   =   pDebFifo;  // début du fifo
-   pDescrFifo->pRead     =   pDebFifo;  // début du fifo
+   pDescrFifo->pFinFifo = pDebFifo + (FifoSize - 1);
+   pDescrFifo->pWrite = pDebFifo;  // début du fifo
+   pDescrFifo->pRead = pDebFifo;  // début du fifo
    pFif = pDebFifo;
    for (i=0; i < FifoSize; i++) {
       *pFif  = InitVal;

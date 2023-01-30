@@ -121,10 +121,12 @@ void APP_Tasks ( void )
             
             //Display Init Text
             lcd_gotoxy(1,1);
-            printf_lcd("TP1 PWM+AD 2022-2023");
+            printf_lcd("Local Settings");
             lcd_gotoxy(1,2);
-            printf_lcd("Chafla Jonathan");
+            printf_lcd("TP2 PWM&RS232 22-23");
             lcd_gotoxy(1,3);
+            printf_lcd("David Loic");
+            lcd_gotoxy(1,4);
             printf_lcd("Steffen Alexandre");
             
             BSP_InitADC10();  //Init of ADC

@@ -90,11 +90,11 @@ void GPWM_DispSettings(S_pwmSettings *pData, int Remote) //Display settings on L
     lcd_gotoxy(1, 2);
     if(pData -> SpeedSetting >= 0)  //Check if value is positive/negative
     {
-        printf_lcd("Speed Setting   +%2d", pData -> SpeedSetting );
+        printf_lcd("Speed Setting   +%2d", pData -> SpeedSetting);
     }
     else
     {
-        printf_lcd("Speed Setting   %3d", pData -> SpeedSetting );
+        printf_lcd("Speed Setting   %3d", pData -> SpeedSetting);
     }
     
     lcd_gotoxy(1, 3);

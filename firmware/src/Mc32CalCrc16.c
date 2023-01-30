@@ -55,6 +55,5 @@ const uint16_t CRC16_table[256] = {
 uint16_t updateCRC16(uint16_t crc, uint8_t data)
 {
     // retourne la nouvelle valeur du crc
-	// return (CRC16_table[(crc >> 8) & 0xFF] ^ (crc << 8) ^ data); // Pas OK
     return (CRC16_table[((crc >> 8) & 0xFF) ^ data] ^ (crc << 8) );
 }
