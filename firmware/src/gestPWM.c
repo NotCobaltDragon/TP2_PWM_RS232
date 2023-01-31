@@ -61,11 +61,11 @@ void GPWM_GetSettings(S_pwmSettings *pData)
     /******---Conversion---***********/
     pData->absSpeed = abs((Avg_ADC_CH0*MOTOR_DC_ABS)/ADC_RES-MOTOR_DC_BAND); //non-signed conversion: 0 to 99
     pData->SpeedSetting = (signed)((Avg_ADC_CH0*MOTOR_DC_ABS)/ADC_RES-MOTOR_DC_BAND); //signed conversion: -99 to 99
-    pData->absSpeed = abs(pData->SpeedSetting);
+   
 
     pData->absAngle = (Avg_ADC_CH1*SERVO_RANGE)/ADC_RES;    //Raw value from 0 to 180
-    pData->AngleSetting = (int8_t) pData->absAngle - SERVO_OFFSET;  //Signed value from -90 to 90
-    pData->absAngle = abs(pData->AngleSetting);
+    pData->AngleSetting = (int8_t)pData->absAngle - SERVO_OFFSET;  //Signed value from -90 to 90
+    
 }
 
 void GPWM_DispSettings(S_pwmSettings *pData, int Remote) //Display settings on LCD
@@ -155,7 +155,7 @@ uint16_t Avg_ADC_Value(uint16_t Avg_Table[])
     //Filling up table to get average
     for(i = 0; i < AVERAGE_SIZE; i++)
     {
-        Sum = Avg_Table[9-i] + Sum;
+        Sum += Avg_Table[9-i];
         if(i < 9)
         {
           Avg_Table[9-i] = Avg_Table[8-i];

@@ -83,7 +83,7 @@ int GetMessage(S_pwmSettings *pData)
     int NbCharToRead;
     int LsbCrcControl, MsbCrcControl;
     uint16_t ctrl_CRC16 = 0xFFFF;
-    uint8_t nbrCycles = 0;
+    static uint8_t time_out = 0;
     //U_manip16 RxCRC;
 
     // Lecture et décodage fifo réception
@@ -96,51 +96,56 @@ int GetMessage(S_pwmSettings *pData)
         GetCharFromFifo(&descrFifoRX,&RxMess.Angle);
         GetCharFromFifo(&descrFifoRX,&RxMess.MsbCrc);
         GetCharFromFifo(&descrFifoRX,&RxMess.LsbCrc);
+
+        if(RxMess.Start == BYTE_BEGIN_MESSAGE)
+        {
+        
+            ctrl_CRC16 = updateCRC16(ctrl_CRC16, RxMess.Start);
+            ctrl_CRC16 = updateCRC16(ctrl_CRC16, RxMess.Speed);
+            ctrl_CRC16 = updateCRC16(ctrl_CRC16, RxMess.Angle);
+
+            MsbCrcControl = (ctrl_CRC16 >> 8)&0xFF;
+            LsbCrcControl = ctrl_CRC16 &0xFF;
+
+            if((RxMess.LsbCrc == LsbCrcControl)&&(RxMess.MsbCrc == MsbCrcControl))
+            {
+                pData->SpeedSetting = RxMess.Speed;
+                pData->AngleSetting = RxMess.Angle;
+
+
+                commStatus = 1;
+                time_out = 0;
+
+                pData->absSpeed = abs(pData->SpeedSetting);
+                pData->absAngle = abs(pData->AngleSetting + SERVO_OFFSET);
+            }
+            else
+            {
+                LED6_W = !LED6_R;
+                //commStatus = 0;
+            }
+        }
     }
-    else
+    /*else
     {
         commStatus = 0;
-    }
+    }*/
 
-    if(RxMess.Start == BYTE_BEGIN_MESSAGE)
-    {
-        
-        ctrl_CRC16 = updateCRC16(ctrl_CRC16, RxMess.Start);
-        ctrl_CRC16 = updateCRC16(ctrl_CRC16, RxMess.Speed);
-        ctrl_CRC16 = updateCRC16(ctrl_CRC16, RxMess.Angle);
-
-        MsbCrcControl = (ctrl_CRC16 >> 8)&0xFF;
-        LsbCrcControl = ctrl_CRC16 &0xFF;
-
-        if((RxMess.LsbCrc == LsbCrcControl)&&(RxMess.MsbCrc == MsbCrcControl))
-        {
-            pData->SpeedSetting = RxMess.Speed;
-            pData->AngleSetting = RxMess.Angle;
-            commStatus = 1;
-            nbrCycles = 0;
-        }
-        else
-        {
-            LED6_W = !LED6_R;
-            //commStatus = 0;
-        }
-    }
+    
     else
     {
         //Attendre 10 cycles avant de switcher en mode local
-        
         //Si 10 cycles passées 
-        if (nbrCycles > 9) 
+        if (time_out > 9) 
         {
             //Remet a 0 le nbr de cycle
-            nbrCycles = 0; 
+            time_out = 0; 
             
             //Indicateur de reception à 0
             commStatus = 0;
          }
-        
         //Incrémentation du nbr de cycles  
-        nbrCycles++;  
+        time_out++;  
     }
     
     // Gestion controle de flux de la réception
